@@ -16,17 +16,21 @@
         // }
         // console.log(sum/(numbers.length));
 // 4. Find the highest number in the array and print it to the console using console.log()
-        //   for (let i = 0; i < numbers.length; i++){
-            
-        //        for ( let y = numbers.length -1 ; y >= 0; y--){
-        //             if(numbers[i] > numbers[y]){
-        //                 console.log(numbers[i]);
-        //             }
-        //        }
-
-        //   }
+      let heighest = numbers[0];
+      for (let number of numbers){
+           if(number > heighest){
+              heighest = number;
+           }
+      }  
+      console.log(heighest);
 // 5. Find the lowest number in the array and print it to the console using console.log()
-     ///////
+        let lowest = numbers[0];
+        for (let number of numbers){
+            if(number < lowest){
+                lowest = number;
+            }
+        }  
+        console.log(lowest);
 // 6. Find the even numbers in the array and print them to the console using console.log()
         // for (let number of numbers){
         //      if(number % 2 === 0){
