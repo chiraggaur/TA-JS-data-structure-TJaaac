@@ -91,75 +91,108 @@ for (let movie of movies[1].genres){
             console.log(false);
             }
 // 22. Log if the year of all three movies is greater than `2017` or not one by one. (Log true or false)
-           let yr1 = movies[0].year;
-           let yr2 = movies[1].year;
-           let yr3 = movies[2].year;
-           if (yr1 > 2017){
-             console.log(true);
-           } else{
-             console.log(false);
-           }
-           if (yr2 > 2017){
-            console.log(true);
-          }else{
-            console.log(false);
+          //  let yr1 = movies[0].year;
+          //  let yr2 = movies[1].year;
+          //  let yr3 = movies[2].year;
+          //  if (yr1 > 2017){
+          //    console.log(true);
+          //  } else{
+          //    console.log(false);
+          //  }
+          //  if (yr2 > 2017){
+          //   console.log(true);
+          // }else{
+          //   console.log(false);
+          // }
+          // if (yr3 > 2017){
+          //   console.log(true);
+          // }else{
+          //   console.log(false);
+          // }
+          //best approach main purpose of loop to avaoid repetation of code 
+          for (let mov of movies){
+            if(mov > 2017){
+              console.log(mov);
+            }
           }
-          if (yr3 > 2017){
-            console.log(true);
-          }else{
-            console.log(false);
-          }
+
 // 23. Log the title of all three movies one by one.
-          console.log(movies[0].title) ;
-          console.log(movies[1].title) ;
-          console.log(movies[2].title) ;
+          // console.log(movies[0].title) ;
+          // console.log(movies[1].title) ;
+          // console.log(movies[2].title) ;
+          //best method 
+          for (let mov of movies){
+              console.log(mov.title);
+          }
 // 24. Log if the title of the first movie is `Hannah` or not
-           if(console.log(movies[0].title == `Hannah` ));
+          //  if(console.log(movies[0].title == `Hannah` ));
 // 25. Log the number of actors in all three movies one by one
-          console.log(movies[0].actors.length) ;
-          console.log(movies[1].actors.length) ;
-          console.log(movies[2].actors.length) ;
+          // console.log(movies[0].actors.length) ;
+          // console.log(movies[1].actors.length) ;
+          // console.log(movies[2].actors.length) ;
+          for (let mov of movies){
+            console.log(mov.actors.length);
+        }
 // 26. Log the number of genres in all three movies one by one
-          console.log(movies[0].genres.length) ;
-          console.log(movies[1].genres.length) ;
-          console.log(movies[2].genres.length) ;
+          // console.log(movies[0].genres.length) ;
+          // console.log(movies[1].genres.length) ;
+          // console.log(movies[2].genres.length) ;
+          for (let mov of movies){
+            console.log(mov.genres.length);
+        }
 // 27. Log the name of all the movies with more than 1 genre
-           if (movies[0].genres.length > 1){
-            console.log(movies[0].title);
-           } 
-           if (movies[1].genres.length > 1){
-            console.log(movies[1].title);
-           } 
-           if (movies[2].genres.length > 1){
-            console.log(movies[2].title);
-           } 
+          //  if (movies[0].genres.length > 1){
+          //   console.log(movies[0].title);
+          //  } 
+          //  if (movies[1].genres.length > 1){
+          //   console.log(movies[1].title);
+          //  } 
+          //  if (movies[2].genres.length > 1){
+          //   console.log(movies[2].title);
+          //  } 
+          for (let mov of movies){
+            if(mov.genres.length > 1)
+            console.log(mov.title);
+        }
 // 28. Log the name of all the movies with more than 1 actors
-          if (movies[0].actors.length > 1){
-            console.log(movies[0].title);
-          } 
-          if (movies[1].actors.length > 1){
-            console.log(movies[1].title);
-          } 
-          if (movies[2].actors.length > 1){
-            console.log(movies[2].title);
-          } 
+          // if (movies[0].actors.length > 1){
+          //   console.log(movies[0].title);
+          // } 
+          // if (movies[1].actors.length > 1){
+          //   console.log(movies[1].title);
+          // } 
+          // if (movies[2].actors.length > 1){
+          //   console.log(movies[2].title);
+          // } 
+          for (let mov of movies){
+            if(mov.actors.length > 1)
+            console.log(mov.title);
+        }
 // 29. Log the name of all the movies with exactly 3 actors
-        if (movies[0].actors.length === 3){
-          console.log(movies[0].title);
-        } 
-        if (movies[1].actors.length === 3){
-          console.log(movies[1].title);
-        } 
-        if (movies[2].actors.length === 3){
-          console.log(movies[2].title);
-        } 
+        // if (movies[0].actors.length === 3){
+        //   console.log(movies[0].title);
+        // } 
+        // if (movies[1].actors.length === 3){
+        //   console.log(movies[1].title);
+        // } 
+        // if (movies[2].actors.length === 3){
+        //   console.log(movies[2].title);
+        // } 
+        for (let mov of movies){
+          if(mov.actors.length == 3)
+          console.log(mov.title);
+      }
 // 30. Log the name of all the movies with year `2018`
-          if (movies[0].year == `2018`){
-            console.log(movies[0].title);
-          } 
-          if (movies[1].year == `2018`){
-            console.log(movies[1].title);
-          } 
-          if (movies[2].year == `2018`){
-            console.log(movies[2].title);
-          } 
+          // if (movies[0].year == `2018`){
+          //   console.log(movies[0].title);
+          // } 
+          // if (movies[1].year == `2018`){
+          //   console.log(movies[1].title);
+          // } 
+          // if (movies[2].year == `2018`){
+          //   console.log(movies[2].title);
+          // } 
+          for (mov of movies){
+            if(mov.year === `2018`)
+            console.log(mov.title);
+        }
